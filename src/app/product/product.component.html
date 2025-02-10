@@ -1,0 +1,29 @@
+<app-header [title]="'Product Table'"></app-header>
+<div class="table-container">
+    <p-table
+      [value]="products"
+      [tableStyle]="{'min-width': '50rem'}"
+      [paginator]="true"
+      [rows]="5"
+      showGridlines
+      [rowsPerPageOptions]="[5, 10, 20]"
+    >
+      <ng-template pTemplate="header">
+        <tr>
+          <th pSortableColumn="code">Code <p-sortIcon field="code" /></th>
+          <th pSortableColumn="name">Name <p-sortIcon field="name" /></th>
+          <th pSortableColumn="category">Category <p-sortIcon field="category" /></th>
+          <th pSortableColumn="quantity">Quantity <p-sortIcon field="quantity" /></th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-product>
+        <tr>
+          <td>{{ product.code }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.category }}</td>
+          <td>{{ product.quantity }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+  

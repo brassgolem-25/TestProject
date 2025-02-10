@@ -1,0 +1,78 @@
+/* Container for the login page */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* The login card styling */
+  .login-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center; /* Center the content */
+  }
+  
+  /* Avatar styling */
+  .avatar-container {
+    margin-bottom: 1rem;
+  }
+  
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  /* Styling the input fields */
+  .input-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #333; /* Ensure input text is visible */
+    background-color: #fff; /* Ensure background color is white for inputs */
+  }
+  
+  /* Submit button styling */
+  .submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .submit-btn:disabled{
+    background-color: #ccc;
+    
+  }
+  

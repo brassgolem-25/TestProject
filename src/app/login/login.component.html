@@ -1,0 +1,26 @@
+<div class="login-container">
+    <div class="login-card">
+      <!-- Avatar Section -->
+      <div class="avatar-container">
+        <img src="https://placehold.co/400" alt="User Avatar" class="avatar" />
+      </div>
+      
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="input-group">
+          <label for="username">Email</label>
+          <input type="text" id="username" formControlName="email" name="email" placeholder="Enter your email" />
+          <app-form-validator [control]="loginForm.controls['email']"></app-form-validator>
+        </div>
+  
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" formControlName="password" name="password" placeholder="Enter your password" />
+          <app-form-validator [control]="loginForm.controls['password']"></app-form-validator>
+
+        </div>
+  
+        <button  class="submit-btn" type="submit" [disabled]="loginForm.invalid" class="submit-btn">Login</button>
+      </form>
+    </div>
+  </div>
+  

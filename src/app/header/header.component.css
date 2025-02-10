@@ -1,0 +1,11 @@
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+  }
+  
+  .header-left h3 {
+    margin: 0;
+  }
